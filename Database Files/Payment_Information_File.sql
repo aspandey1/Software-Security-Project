@@ -1,0 +1,17 @@
+DROP SCHEMA `payment_database`;
+CREATE SCHEMA `payment_database` ;
+
+CREATE TABLE `payment_database`.`patient_bills` (
+  `PATIENT_ID` INT NOT NULL,
+  `AMOUNT_DUE` FLOAT NOT NULL,
+  `CREDITCARD_NUM` VARCHAR (19) NOT NULL,
+  `CURRENT_FUNDS` FLOAT NOT NULL,
+  PRIMARY KEY(`PATIENT_ID`));
+  
+INSERT INTO `payment_database`.`patient_bills` (`PATIENT_ID`, `AMOUNT_DUE`, `CREDITCARD_NUM`, `CURRENT_FUNDS`) VALUES ('1', 100.00, '1234-5678-9101-1121', '1000.11');
+INSERT INTO `payment_database`.`patient_bills` (`PATIENT_ID`, `AMOUNT_DUE`, `CREDITCARD_NUM`, `CURRENT_FUNDS`) VALUES ('2', '150.23', '1234-5278-9101-3121', '100.19');
+INSERT INTO `payment_database`.`patient_bills` (`PATIENT_ID`, `AMOUNT_DUE`, `CREDITCARD_NUM`, `CURRENT_FUNDS`) VALUES ('3', '200.89', '3234-5678-9109-1121', '1000.12');
+INSERT INTO `payment_database`.`patient_bills` (`PATIENT_ID`, `AMOUNT_DUE`, `CREDITCARD_NUM`, `CURRENT_FUNDS`) VALUES ('4', '250.77', '6234-5678-9102-1121', '100.56');
+INSERT INTO `payment_database`.`patient_bills` (`PATIENT_ID`, `AMOUNT_DUE`, `CREDITCARD_NUM`, `CURRENT_FUNDS`) VALUES ('5', '300.68', '9234-5678-9311-1121', '1000.66');
+
+  
